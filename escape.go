@@ -20,7 +20,7 @@ func EscapeHTMLTag(html string) string {
 		result = strings.ReplaceAll(result, k, v)
 	}
 	
-	fmt.Println("...... Debug ......")
+	fmt.Println("...... Debug v0.4.1......")
 	
 	return result
 }
