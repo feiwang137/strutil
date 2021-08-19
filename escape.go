@@ -1,6 +1,7 @@
 package strutil
 
 import (
+	"fmt"
 	"strings"
 )
 
@@ -18,5 +19,8 @@ func EscapeHTMLTag(html string) string {
 	for k, v := range ESCAPE_HTML {
 		result = strings.ReplaceAll(result, k, v)
 	}
+	
+	fmt.Println("...... Debug ......")
+	
 	return result
 }
